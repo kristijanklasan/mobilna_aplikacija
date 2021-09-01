@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/contentReservation"
+    tools:context="android.unipu.theater.user.ReservationOverview">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarReservation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/pozadina"
+            android:fitsSystemWindows="true"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:title=" ">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/logo"/>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/navigation_pregledRezervacija"
+        android:background="@color/pozadina"
+        android:foregroundGravity="center"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation_pregledRezervacija"
+        android:layout_alignParentBottom="true"
+        android:background="#323232"
+        android:foregroundGravity="bottom"
+        app:itemTextColor="#FFFFFF"
+        app:itemIconTint="#FFFFFF"
+        app:menu="@menu/bottom_reservation"
+        tools:ignore="MissingConstraints">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>

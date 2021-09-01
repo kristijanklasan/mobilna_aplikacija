@@ -1,0 +1,391 @@
+<resources>
+    <string name="app_name">Theater GOLD</string>
+    <string name="navigation_open">Otvori</string>
+    <string name="navigation_close">Zatvori</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="name_app">Theater GOLD</string>
+    <string name="sati_oznaka">h</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_application_title">Informacije o aplikaciji</string>
+    <string name="image_gallery">Kazališna galerija</string>
+    <string name="tekstCijene">Pregled cijena korištenih za rezervaciju ulaznica.
+        Za rezervaciju se koriste cijene s najnovijim datumom!</string>
+    <string name="admin_reservation_title">Pregled ponude za</string>
+    <string name="admin_reservation_tab1">Detalji</string>
+    <string name="admin_reservation_tab2">Ulaznice</string>
+    <string name="admin_reservation_tab3">Statistika</string>
+    <string name="search">Unesite pojam po kojemu želite pretraživati!</string>
+    <string name="notFound">Provjerite upisani pojam, te pokušajte ponovno!</string>
+    <string name="snackbarText">Predstava je uklonjena iz favorita!</string>
+
+    <string name="sve">Sve</string>
+    <string name="aktivno">Aktivno</string>
+    <string name="proslo">Prošlo</string>
+    <string name="cijene">*Cijene ulaznica se odnose na populaciju: djeca do 10 god., odrasli > 10 godina.</string>
+    <string name="profilData">Popunite polja s podacima!</string>
+    <string name="izbornikText">Brzi izbornik</string>
+    <string name="izbornikUser">Pregled glavnih funkcija:</string>
+    <string name="user_question_title">Najčešća pitanja</string>
+    <string name="izbornik">Izbornik</string>
+    <string name="administratorski_izbornik">Administratorski izbornik</string>
+    <string name="zadrzati_email">Zadržati e-mail adresu?</string>
+    <string name="ucitavanje_resursa">Učitavanje resursa</string>
+
+    <!-- Tekst za cardView u administratorskom izborniku -->
+    <string name="naslovPretrazi">Pretraga</string>
+    <string name="opisPretrazi">Uključuje pregled, brisanje, te ažuriranje podataka predstave. </string>
+    <string name="menuPretrazi">Pretraživanje predstava</string>
+
+    <string name="menuRezervacija">Pregled rezervacija</string>
+    <string name="naslovRezervacija">Rezervacije</string>
+    <string name="opisRezervacija">Pregled i izmjena podataka predstave, te prikaz statistike.</string>
+
+    <string name="naslovNovo">Unos</string>
+    <string name="menuNovo">Unos predstava i ponuda</string>
+    <string name="opisNovo">Uključuje unos novih predstava i njihovih pripadnih ponuda. </string>
+
+    <string name="menuProfil">Upravljanje profilom</string>
+    <string name="naslovProfil">Profil</string>
+    <string name="opisProfila">Uključuje pregled i ažuriranje podataka + novi admin. </string>
+
+    <string name="menuCijena">Upravljanje cijenama</string>
+    <string name="naslovCijene">Cijene</string>
+    <string name="opisCijene">Uključuje dodavanje i brisanje cijena. Dodatno sortira cijene. </string>
+
+    <string name="menuPitanja">Pregled pitanja</string>
+    <string name="naslovPitanja">Pitanja</string>
+    <string name="opisPitanja">Obuhvaća pregled, unos i brisanje najčešćih pitanja.</string>
+
+    <!-- Tekst za CardView u korisnickom izborniku -->
+    <string name="menuPregled">Pregled predstava</string>
+    <string name="naslovPregled">Pregled</string>
+    <string name="opisPregled">Pretraživanje i pregled podataka odabranih predstava.</string>
+
+    <string name="menuKarte">Rezervacija ulaznica</string>
+    <string name="naslovKarte">Rezervacija</string>
+    <string name="opisKarte">Uključuje rezervaciju ulaznica odabrane predstave.</string>
+
+    <string name="menuPregledRezervacija">Pregled rezervacija</string>
+    <string name="naslovPregledRezervacija">Ulaznice</string>
+    <string name="opisPregledRezervacija">Omogućuje prikaz rezerviranih ulaznica i prikaz favorita.</string>
+
+    <string name="menuRacun">Korisnički račun</string>
+    <string name="naslovRacun">Račun</string>
+    <string name="opisRacun">Uključuje pregled i izmjenu osobnih korisničkih podataka.</string>
+
+    <string name="menuCijene">Pregled cijena</string>
+    <string name="opisCijena">Omogućuje pregled najnovijih cijena ulaznica po datumu.</string>
+    <string name="naslovCijena">Cijene</string>
+
+    <string name="text_on">Uključeno</string>
+    <string name="text_off">Isključeno</string>
+    <string name="moj_izbor">Moj izbor</string>
+    <string name="odaberite_datum">Odaberite datum:</string>
+    <string name="odabrani_datum">-odabrani datum-</string>
+    <string name="pretrazivanje_datum">Pretraživanje po datumu:</string>
+    <string name="nema_rezultata">Nije pronađen rezultat!</string>
+    <string name="nema_predstava">Trenutno nema predstava za prikazati!</string>
+
+    <string name="spremi">Spremi</string>
+    <string name="unesi_ime">Unesite ime</string>
+    <string name="unesi_prezime">Unesite prezime</string>
+    <string name="unesi_adresu">Unesite e-mail</string>
+    <string name="unesi_broj">Unesite broj</string>
+    <string name="unesi_lozinku">Unesite novu lozinku</string>
+    <string name="potvrdi_lozinku">Ponovi lozinku</string>
+
+    <string name="korisnicki_racun">Korisnički račun</string>
+    <string name="upravljanje_profilom">Upravljaj profilom</string>
+    <string name="promjena_podataka">Promjena podataka</string>
+    <string name="ime">Ime</string>
+    <string name="prezime">Prezime</string>
+    <string name="Telefon">Broj telefona:</string>
+    <string name="email">E-mail adresa:</string>
+    <string name="lozinka">Lozinka:</string>
+    <string name="potvrda_lozinke">Potvrda lozinke:</string>
+
+    <!-- prijava_korisnik -->
+    <string name="korisnik">Korisnik</string>
+    <string name="prijavite_se_naslov">Prijavite se</string>
+    <string name="nemate_racun">Nemate korisnički račun?</string>
+    <string name="registrirajte_se">Registrirajte se!</string>
+
+    <!-- prijava_administrator -->
+    <string name="novi_admin">Novi administrator</string>
+    <string name="administrator">Administrator</string>
+    <string name="registracija_korisnika">Registracija korisnika</string>
+    <string name="prijava_korisnika">Prijava korisnika</string>
+
+    <!-- registracija -->
+    <string name="registracija_naslov">registrirajte se</string>
+    <string name="ime_unos">Unesite ime:</string>
+    <string name="prezime_unos">Unesite prezime:</string>
+    <string name="broj_unos">Unesite broj telefona:</string>
+    <string name="email_unos">Unesite e-mail adresu:</string>
+    <string name="lozinka_ponovno">Ponovite lozinku:</string>
+    <string name="lozinka_unos">Unesite lozinku:</string>
+    <string name="otvoreni_racun">Imate otvoreni račun?</string>
+    <string name="prijavite_se">Prijavite se!</string>
+    <string name="registracija_gumb">Registriraj se</string>
+
+    <!-- Prikaz rasporeda predstava -->
+    <string name="kupi">Kupi</string>
+    <string name="vrijeme_raspored">Vrijeme:</string>
+    <string name="datum">Datum</string>
+    <string name="danas">Danas</string>
+
+    <!-- Prikaz ponuda predstava(redak) -->
+    <string name="naslov">Naslov</string>
+    <string name="kategorija">Kategorija</string>
+    <string name="vrijeme">Vrijeme</string>
+
+    <!-- Pregled rezervacija(redak) -->
+    <string name="naziv_predstave">Naziv predstave:</string>
+    <string name="pregled_kategorija">Kategorija:</string>
+    <string name="pregled_datum">Datum:</string>
+    <string name="pregled_kolicina">Kolicina</string>
+
+    <!-- Pregled i unos cijena (redak) -->
+    <string name="ulaznice_djeca">Cijene za djecu:</string>
+    <string name="ulaznice_odrasli">Cijene za odrasle:</string>
+    <string name="ulaznice_studenti">Cijene za studente:</string>
+    <string name="ulaznice_umirovljenici">Cijene za umirovljenike:</string>
+    <string name="ulaznice_dan_kupnje">Cijene na dan kupnje:</string>
+    <string name="ulaznice_premijera">Cijene premijere:</string>
+    <string name="brisanje_cijene">Želite li izbrisati cijenu?</string>
+    <string name="ulaznice_cijene">Cijene ulaznica</string>
+    <string name="cijene_na_dan_priakzivanja">Cijene na dan prikazivanja:</string>
+    <string name="cijene_vrijede">Cijene vrijede od:</string>
+    <string name="ulaznice_iznos">Iznos [kn]</string>
+    <string name="cijene_pregled">Cijene</string>
+    <string name="dobno_ogranicenje">Dobna kategorija</string>
+    <string name="upute_cijene">*Korisnik je posjetitelj aplikacije koji može rezervirati najmanje jednu ulaznicu.
+                                 Sve cijene su izražene u kunama i uključuju PDV. Konačne cijene rezervacija se obračunavaju u skladu s propisanim pravilima kazališta.
+                                Ukoliko se ne slažete s navedenim, molimo Vas da ne koristite dalje ovu aplikaciju.
+                               </string>
+    <string name="nema_cijene">0 kn</string>
+    <string name="izbrisi">Izbriši</string>
+
+    <!-- Popup prozor unosa cijena -->
+    <string name="close">X</string>
+    <string name="unos_cijene">Unos cijene</string>
+    <string name="tekst_unosa_cijene">Unos cijene ulaznica po kategorijama!</string>
+    <string name="datum_unosa">Datum unosa:</string>
+    <string name="cijene_djeca">Cijene za djecu:</string>
+    <string name="cijene_odrasli">Cijene odrasli:</string>
+    <string name="cijene_studenti">Cijene studenti:</string>
+    <string name="cijene_umirovljenici">Cijene umirovljenici:</string>
+    <string name="cijena_danas">Cijena za danas: </string>
+    <string name="unesite_cijenu">Unesite cijenu</string>
+    <string name="spremi_cijenu">Spremi cijenu</string>
+
+    <!-- Pitanja i odgovori -->
+    <string name="tekst_pitanje_odgovor">Unesite pitanje i odgovor</string>
+    <string name="unos_pitanja">Unesite pitanje:</string>
+    <string name="unos_odgovora">Unesite odgovor:</string>
+    <string name="spremi_pitanje">Spremi pitanje</string>
+
+    <!-- Upravljanje rezervacijama (redak) -->
+    <string name="potvrda">Potvrda</string>
+    <string name="rezervirano">Rezerevirano:</string>
+    <string name="cijena">Cijena</string>
+    <string name="rezervirana_ulaznica">Rezervirana ulaznica:</string>
+    <string name="kategorija_ulaznice">Kategorija:</string>
+    <string name="datum_prikazivanja">Datum prikazivanja:</string>
+    <string name="vrijeme_prikazivanja">Vrijeme prikazivanja:</string>
+    <string name="broj_ulaznica">Broj ulaznica:</string>
+    <string name="ukupna_cijena">Ukupna cijena:</string>
+    <string name="ukupno">Ukupno</string>
+    <string name="status_potvrde">Status potvrde:</string>
+    <string name="Korisnik_novo">Korisnik:</string>
+    <string name="izbrisi_rezervaciju">Izbriši rezervaciju</string>
+
+    <!-- Pregled detalja rezervacje -->
+    <string name="prikaz_rezervacije">Prikaz rezervacije</string>
+    <string name="datum_rezervacije">Datum rezerviranja:</string>
+    <string name="broj">Broj</string>
+    <string name="potvrda_placanja">Potvrda plaćanja:</string>
+    <string name="sifra_ulaznice">Šifra ulaznice:</string>
+    <string name="sifra">Šifra</string>
+    <string name="popis_ulaznica">Popis ulaznica:</string>
+    <string name="trenutno_stanje">Trenutno stanje:</string>
+    <string name="da">Da</string>
+    <string name="ne">Ne</string>
+
+    <!-- Fragment unos predstave -->
+    <string name="tekst_predstave">Unos predstave</string>
+    <string name="naziv">Naziv:</string>
+    <string name="unos_predstave">Unesite naziv predstave</string>
+    <string name="datum_predstave">Datum predstave:</string>
+    <string name="odaberite_slike_predstave">Odaberite slike s predstave:</string>
+    <string name="tekst_predstava">Opis predstave:</string>
+    <string name="unesi_opis">Unesite opis</string>
+    <string name="redatelj">Redatelji:</string>
+    <string name="unos_redatelja">Unesite redatelja</string>
+    <string name="glumci">Glumci:</string>
+    <string name="unos_glumaca">Unesite glumce:</string>
+    <string name="dramaturgija">Dramaturgija:</string>
+    <string name="unos_dramaturgije">Unesite dramaturge</string>
+    <string name="kostimografija">Kostimografija:</string>
+    <string name="unos_kostimografa">Unesite kostimografe</string>
+    <string name="scenografija">Scenografija:</string>
+    <string name="unos_scenografa">Unesite scenografe</string>
+    <string name="glazba">Glazbeni izvođači:</string>
+    <string name="unos_glazbe">Unesite izvođače</string>
+    <string name="koreografija">Koreografija:</string>
+    <string name="unos_koreografa">Unesite koreografe</string>
+    <string name="tehnicka_podrska">Tehnička podrška i vodstvo:</string>
+    <string name="unos_podrske">Unesite tehničku podršku</string>
+    <string name="spremi_predstavu">Spremi predstavu</string>
+
+    <!-- Fragment uvjeti rezervacija ulaznica -->
+    <string name="tekst_uvjeti">Uvjeti rezervacije ulaznica</string>
+
+    <!-- Fragment prikaz statistike -->
+    <string name="promjena_grafa">Promijeni graf</string>
+    <string name="pregled_statusa_placanja">Pregled statusa plaćanja:</string>
+    <string name="pregled_rezerviranih_sjedala">Pregled rezerviranih sjedala</string>
+
+    <!-- Pregled detalja -->
+    <string name="sazetak_predstava">Sažetak predstave:</string>
+    <string name="opis">Opis</string>
+    <string name="datum_premijere">Datum premijere:</string>
+    <string name="glumci_detalji">Glumci</string>
+    <string name="redatelji_detalji">Redatelji</string>
+    <string name="dramaturgija_detalji">Dramaturgija</string>
+    <string name="kostimografija_detalji">Kostimografija</string>
+    <string name="scenografija_detalji">Scenografija</string>
+    <string name="tehnickapodrska_vodstvo">Tehnička podrška:</string>
+    <string name="podrska_detalji">Podrška</string>
+    <string name="glazba_detalji">Glazba</string>
+    <string name="koreografija_detalji">Koreografija</string>
+
+    <!-- Fragment nova ponuda -->
+    <string name="nova_ponuda">Nova ponuda</string>
+    <string name="predstava">Predstava:</string>
+    <string name="odaberite_vrijeme">Odaberite vrijeme:</string>
+    <string name="tekst_upozorenje">Datum i vrijeme se već koriste!</string>
+    <string name="max_ulaznica">Max. broj ulaznica</string>
+    <string name="broj_ulaznica_ponuda">broj ulaznica (npr. 120)</string>
+    <string name="trenutno_ulaznica">Trenutno ulaznica:</string>
+    <string name="nula">0</string>
+    <string name="dvorana_ponuda">Dvorana za predstavu:</string>
+    <string name="dvorana_1">Dvorana 1</string>
+    <string name="premijera_predstave">Premijera predstave:</string>
+    <string name="dodatni_detalji">Prikaz dodatnih detalja:</string>
+    <string name="sifra_predstave">Šifra predstave</string>
+    <string name="sifra_korisnika">Šifra korisnika:</string>
+    <string name="administrator_ponuda">Administrator:</string>
+    <string name="trenutni_datum">Trenutni datum:</string>
+    <string name="trenutni_datum_ponuda">Trenutni datum</string>
+    <string name="spremi_ponudu">Spremi ponudu</string>
+
+    <!-- Pregled rezervacija -->
+    <string name="filtar_prikaza">Filtar prikaza:</string>
+    <string name="rezervacije">Rezervacije</string>
+
+    <!-- Aktivnost detalja predstave -Administrator -->
+    <string name="detalji">Detalji</string>
+    <string name="raspored">Raspored</string>
+
+    <!-- Fragment administrator profil -->
+    <string name="ime_profil">Ime:</string>
+    <string name="prezime_profil">Prezime:</string>
+    <string name="privatni_broj_profil">Privatni broj:</string>
+    <string name="broj_telefona_profil">Broj telefona:</string>
+    <string name="email_profil">E-mail adresa:</string>
+    <string name="sifra_administratora">Šifra administratora:</string>
+    <string name="zadrzanje_adrese">Zadržati postojeću e-mail adresu?</string>
+    <string name="promjena_lozinke">Omogućiti promjenu lozinke?</string>
+    <string name="lozinka_profil">Lozinka:</string>
+    <string name="ponovite_lozinku">Ponovite lozinku</string>
+    <string name="spremi_promjene">Spremi promjene</string>
+    <string name="prikaz_podataka">Prikaz podataka</string>
+    <string name="update_podataka">Update podataka</string>
+
+    <!-- Korisnik profil -->
+    <string name="pregled_podataka_korisnik">1. Pregled podataka</string>
+    <string name="update_podataka_korisnik">2. Update podataka</string>
+    <string name="broj_racuna">Broj računa:</string>
+    <string name="zadrzati_adresu">Želite zadržati e-mail adresu?</string>
+    <string name="promjena_lozinke_korisnik">Promjena lozinke?</string>
+    <string name="racun">Račun</string>
+
+    <string name="raspored_prikazivanja">Raspored prikazivanja predstave:</string>
+    <string name="nema_ponude">Trenutno nema predstava u ponudi!</string>
+    <string name="odaberi_filter">Odaberite filtar:</string>
+    <string name="sutra">Sutra</string>
+    <string name="mjesec">Mjesec</string>
+
+    <!-- Fragment ponuda detalji -->
+    <string name="administratorski_podaci">Administratorski podaci</string>
+    <string name="osnovni_podaci">Osnovni podaci o ponudi</string>
+    <string name="kategorija_predstave">Kategorija predstave:</string>
+    <string name="datum_izvedbe">Datum izvedbe:</string>
+    <string name="vrijeme_pocetka">Vrijeme početka:</string>
+    <string name="zauzetost_dvorane">Dvorana je zauzeta! Odaberite novo vrijeme!</string>
+    <string name="ulaznice">Ulaznice</string>
+    <string name="dvorana_kazalista">Dvorana kazališta:</string>
+    <string name="dvorana">Dvorana</string>
+    <string name="premijera">Premijera:</string>
+    <string name="premijera_detalji">Premijera</string>
+    <string name="update_detalji">Ažuriraj</string>
+    <string name="ime_prezime">Ime i prezime:</string>
+    <string name="potvrda_unosa">Potvrdi unos</string>
+
+    <!-- Galerija -->
+    <string name="ucitavanje_slike">Učitavanje slike</string>
+    <string name="unos_slike">Unesite naziv slike:</string>
+    <string name="url_slike">Unesite URL slike</string>
+    <string name="ucitavanje">Učitajte željene slike u galeriju!</string>
+    <string name="odaberite_sliku">Odaberite sliku iz kazališne galerije:</string>
+
+    <!-- Fragment rezervacija ulaznica -->
+    <string name="rezervacija_ulaznic">Rezervacija ulaznica</string>
+    <string name="odaberite_predstavu">Odaberite predstavu:</string>
+    <string name="cijene_ulaznica">Cijene ulaznica:</string>
+    <string name="checkbox_djeca">Djeca</string>
+    <string name="checkbox_odrasli">Odrasli</string>
+    <string name="checkbox_studenti">Studenti</string>
+    <string name="checkbox_umirovljenici">Umirovljenici</string>
+    <string name="pregled_podataka">Pregled podataka:</string>
+    <string name="naslov_predstave">Naslov predstave:</string>
+    <string name="cijena_ulaznica">Cijena ulaznica [kn]</string>
+    <string name="rezervacija_sjedala">Rezerviraj sjedala</string>
+    <string name="kolicina_ulaznica">Količina ulaznica:</string>
+    <string name="izracun_cijene">Izračun cijene</string>
+    <string name="kolicina">Količina</string>
+    <string name="stavka">Stavka</string>
+    <string name="iznos">Iznos</string>
+    <string name="ulaznica">Ulaznica:</string>
+    <string name="dan_kupnje_rezervacija">Dan kupnje:</string>
+    <string name="crtica">-</string>
+    <string name="cijena_rezervacija">Cijena</string>
+    <string name="nula_kn">0 kn</string>
+    <string name="rezerviraj">Rezerviraj</string>
+    <string name="glavna_dvorana">Glavna dvorana</string>
+    <string name="popis_rezervacija">Popis rezervacija</string>
+    <string name="prikaz_potvrde">Prikaz prema potvrdama:</string>
+
+    <!-- Pitanja (redak) -->
+    <string name="brisanje_pitanja">Želite li izbrisati pitanje?</string>
+    <string name="najcesca_pitanja">Najčešća pitanja</string>
+
+    <string name="nema_rezultata_detalji">Nema rezultata pretrage!</string>
+    <string name="trenutno_nema_rezultata">Trenutno nema predstava u ponudi!</string>
+
+    <!-- Informacije o aplikaciji -->
+    <string name="naziv_uredaja">Naziv uređaja:</string>
+    <string name="sdk_verzija">SDK verzija:</string>
+    <string name="verzija_aplikacije">Broj verzije aplikacije:</string>
+    <string name="verzija_os">Verzija OS:</string>
+    <string name="povezivanje">Način povezivanja:</string>
+    <string name="verzija">1.0</string>
+    <string name="verzija_tekst">Verzija</string>
+    <string name="povezivanje_tekst">Povezivanje</string>
+
+</resources>
+
+
+

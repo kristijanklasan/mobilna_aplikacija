@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="android.unipu.theater">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="orientation"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon">
+        <activity android:name=".administrator.PerformanceDetail"
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".user.UserQuestionActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".administrator.QuestionActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".administrator.ImageGallery"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".administrator.AdminProfile"
+            android:screenOrientation="nosensor" />
+        <activity android:name=".user.ReserveTickets" />
+        <activity
+            android:name=".user.BookingTickets"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".user.UserReservation"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".administrator.ReservationDetail"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".administrator.ReservationActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".user.AboutApplication"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".user.ReservationOverview"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".user.ProfileActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".user.UserPrices"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".administrator.PricesActivtiy"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".user.ShowDetail"
+            android:theme="@style/AppTheme.ActionBar.Transparent" />
+        <activity
+            android:name=".user.UserPerformances"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".administrator.PerformancesActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".administrator.OfferActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".administrator.AdminWindow"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".administrator.AdministratorLogin"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".user.MainWindow"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".user.UserRegistration"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".user.UserLogin"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

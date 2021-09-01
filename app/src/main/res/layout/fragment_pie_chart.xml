@@ -1,0 +1,63 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="android.unipu.theater.fragmenti.administrator.PieChartFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView148"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:gravity="end"
+                android:text="@string/promjena_grafa"
+                android:textColor="#A39393" />
+
+            <Switch
+                android:id="@+id/switchBarChart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="0dp"
+                android:text="@string/ne"
+                android:textColor="#938484" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView146"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/pregled_statusa_placanja"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,588 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentBuyTickets"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:layout_marginTop="50dp"
+    android:background="@color/pozadina"
+    tools:context="android.unipu.theater.fragmenti.user.BuyTickets">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView91"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/rezervacija_ulaznic"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView92"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp"
+                android:paddingRight="10dp"
+                android:text="@string/odaberite_predstavu"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="1dp"
+                android:innerRadius="0dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:shape="ring"
+                app:cardCornerRadius="20dp">
+
+                <Spinner
+                    android:id="@+id/spinnerPredstava"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="0dp"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:foregroundGravity="left"
+                    android:contentDescription="@null"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    app:srcCompat="@drawable/theater_mask" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView93"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/odaberite_datum"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="0.8"
+                        android:elevation="1dp"
+                        android:foregroundTint="#FFFFFF"
+                        android:innerRadius="0dp"
+                        android:shape="ring"
+                        app:cardBackgroundColor="@color/bluedark"
+                        app:cardCornerRadius="20dp">
+
+                        <Spinner
+                            android:id="@+id/spinnerDatum"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:foregroundGravity="center"
+                            android:foregroundTint="#FFFFFF"
+                            android:gravity="center"
+                            android:paddingStart="30dp"
+                            android:paddingEnd="0dp"/>
+
+                        <ImageView
+                            android:id="@+id/imageView19"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:layout_weight="1"
+                            android:contentDescription="@null"
+                            android:foregroundGravity="left"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            app:srcCompat="@drawable/ic_date_range_color_24dp" />
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView94"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/odaberite_vrijeme"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="0.8"
+                        android:elevation="1dp"
+                        android:foregroundTint="#FFFFFF"
+                        android:innerRadius="0dp"
+                        android:shape="ring"
+                        app:cardBackgroundColor="@color/bluedark"
+                        app:cardCornerRadius="20dp">
+
+                        <Spinner
+                            android:id="@+id/spinnerVrijeme"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="#FFFFFF"
+                            android:foregroundGravity="center"
+                            android:gravity="center"
+                            android:paddingStart="40dp"
+                            android:paddingEnd="0dp"/>
+
+                        <ImageView
+                            android:id="@+id/imageView20"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="start"
+                            android:contentDescription="@null"
+                            android:layout_weight="1"
+                            android:foregroundGravity="left"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            app:srcCompat="@drawable/ic_access_time_black_24dp" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView98"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:text="@string/cijene_ulaznica"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/djecaBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#3F51B5"
+                        android:buttonTint="#E91E63"
+                        android:drawableTint="#FFFFFF"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/checkbox_djeca"
+                        android:textColor="#FFFFFF" />
+
+                    <CheckBox
+                        android:id="@+id/odrasliBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#E91E63"
+                        android:checked="true"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/checkbox_odrasli"
+                        android:textColor="#FFFFFF" />
+
+                    <CheckBox
+                        android:id="@+id/studentiBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#E91E63"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/checkbox_studenti"
+                        android:textColor="#FFFFFF" />
+
+                    <CheckBox
+                        android:id="@+id/umirovljeniciBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:buttonTint="#E91E63"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/checkbox_umirovljenici"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView104"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/cijene"
+                android:textColor="@color/grayReservation"
+                android:textSize="10sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView95"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/pregled_podataka"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView96"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/naslov_predstave"
+                    android:textColor="@color/grayReservation"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#434242" />
+
+                <TextView
+                    android:id="@+id/naslovTickets"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="#434242" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView97"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/kategorija_ulaznice"
+                    android:textColor="@color/grayReservation"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#434242" />
+
+                <TextView
+                    android:id="@+id/kategorijaTickets"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="#434242" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView99"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/datum_prikazivanja"
+                    android:textColor="@color/grayReservation"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#434242" />
+
+                <TextView
+                    android:id="@+id/datumTickets"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="#434242" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView100"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/vrijeme_prikazivanja"
+                    android:textColor="@color/grayReservation"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#434242" />
+
+                <TextView
+                    android:id="@+id/vrijemeTickets"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="#434242" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView101"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/trenutno_ulaznica"
+                    android:textColor="@color/grayReservation"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#434242" />
+
+                <TextView
+                    android:id="@+id/ulazniceTickets"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="#434242" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView103"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/cijena_ulaznica"
+                    android:textColor="@color/grayReservation"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#434242" />
+
+                <TextView
+                    android:id="@+id/karteTickets"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="#434242" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView102"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/dvorana_kazalista"
+                    android:textColor="@color/grayReservation"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#434242" />
+
+                <TextView
+                    android:id="@+id/dvoranaTickets"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="#434242" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingLeft="40dp"
+                android:paddingTop="20dp"
+                android:paddingRight="40dp"
+                android:paddingBottom="70dp">
+
+                <Button
+                    android:id="@+id/sjedalaButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_update"
+                    android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+                    android:text="@string/rezervacija_sjedala"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+</ScrollView>
+

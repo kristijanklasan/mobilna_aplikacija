@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pozadina"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="200dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:contentDescription="@null"
+        android:padding="20dp"
+        app:srcCompat="@drawable/theater_mask" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <yanzhikai.textpath.SyncTextPathView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:duration="5000"
+            app:paintStrokeColor="#FFFFFF"
+            app:paintStrokeWidth="5dp"
+            app:pathStrokeColor="#FFFFFF"
+            app:pathStrokeWidth="1dp"
+            app:showPainter="true"
+            app:showPainterActually="true"
+            app:text="Theater"
+            app:textInCenter="true"
+            app:textSize="50sp" />
+
+        <yanzhikai.textpath.SyncTextPathView
+            android:id="@+id/textTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="5dp"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:duration="3000"
+            app:paintStrokeColor="#FFFFFF"
+            app:paintStrokeWidth="5dp"
+            app:pathStrokeColor="#C59902"
+            app:pathStrokeWidth="3dp"
+            app:showPainter="true"
+            app:showPainterActually="true"
+            app:text="GOLD"
+            app:textInCenter="true"
+            app:textSize="50sp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Small.Title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:backgroundTint="#353434" />
+
+    <TextView
+        android:id="@+id/textView200"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="bottom|center_horizontal"
+        android:paddingBottom="20dp"
+        android:text="@string/ucitavanje_resursa"
+        android:textColor="@color/gray_color" />
+
+</LinearLayout>

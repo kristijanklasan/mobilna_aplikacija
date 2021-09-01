@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/containerUnos"
+    tools:context="android.unipu.theater.administrator.OfferActivity">
+
+    <FrameLayout
+        android:id="@+id/containerOffer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/navigation_unos"
+        android:foregroundGravity="center"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation_unos"
+        android:layout_alignParentBottom="true"
+        android:background="#323232"
+        android:foregroundGravity="bottom"
+        app:itemTextColor="#FFFFFF"
+        app:itemIconTint="#FFFFFF"
+        app:menu="@menu/bottom_offer"
+        tools:ignore="MissingConstraints">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

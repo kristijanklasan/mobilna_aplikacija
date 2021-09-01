@@ -1,0 +1,609 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/pozadina"
+    android:id="@+id/content"
+    tools:context="android.unipu.theater.fragmenti.administrator.TheaterPlay">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="60dp"
+        app:cardBackgroundColor="#222742"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:fitsSystemWindows="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbarTheaterNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fitsSystemWindows="true"
+                    android:minHeight="?attr/actionBarSize"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:title=" ">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/tekst_predstave"
+                        android:textAllCaps="true"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+                </androidx.appcompat.widget.Toolbar>
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.CornerSize"
+                    app:srcCompat="@drawable/theater_mask"
+                    app:strokeColor="@color/grey"
+                    app:strokeWidth="1dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/nazivPredstaveText"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_weight="0.5"
+                        android:text="@string/naziv"
+                        android:textColor="#959191"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/nazivPredstaveEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:ems="10"
+                        android:maxLength="50"
+                        android:hint="@string/unos_predstave"
+                        android:autofillHints="@null"
+                        android:inputType="text"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#D5AEB7"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/kategorijaText"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_weight="0.5"
+                        android:text="@string/kategorija_ulaznice"
+                        android:textColor="#959191"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/kategorijaSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/datumPremijereText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/datum_predstave"
+                        android:textColor="#959191"
+                        android:textSize="16sp" />
+
+                    <ImageButton
+                        android:id="@+id/imageDatum"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:backgroundTint="#00FFFFFF"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:autofillHints="@null"
+                        android:contentDescription="@null"
+                        android:contextClickable="false"
+                        android:scaleType="fitCenter"
+                        android:screenReaderFocusable="false"
+                        android:src="@drawable/ic_date_range_color_24dp" />
+
+                    <TextView
+                        android:id="@+id/textDatum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:hint="@string/odabrani_datum"
+                        android:textAlignment="viewStart"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#D5AEB7"
+                        android:textSize="15sp"
+                        android:textStyle="bold|italic" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="0dp"
+                        android:text="@string/odaberite_slike_predstave"
+                        android:textColor="#959191"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageTheater1"
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@null"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_launcher_foreground" />
+
+                        <ImageView
+                            android:id="@+id/imageTheater2"
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@null"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_launcher_foreground" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/opisText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/tekst_predstava"
+                        android:textColor="#959191"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/opisEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:maxLength="1000"
+                        android:gravity="start|top"
+                        android:hint="@string/unesi_opis"
+                        android:autofillHints="@null"
+                        android:inputType="textMultiLine"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#D5AEB7"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#434242" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/redateljText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/redatelj"
+                        android:textColor="#959191"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/redateljEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:maxLength="50"
+                        android:hint="@string/unos_redatelja"
+                        android:autofillHints="@null"
+                        android:inputType="text"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#D5AEB7"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#434242" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/glumciText"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/glumci"
+                        android:textColor="#959191"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/glumciEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:maxLength="200"
+                        android:gravity="start|top"
+                        android:hint="@string/unos_glumaca"
+                        android:autofillHints="@null"
+                        android:inputType="textMultiLine"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#D5AEB7"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#434242" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/dramaturgijaText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/dramaturgija"
+                        android:textColor="#959191"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/dramaturgijaEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:maxLength="50"
+                        android:hint="@string/unos_dramaturgije"
+                        android:autofillHints="@null"
+                        android:inputType="text"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#D5AEB7"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#434242" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/kostimografijaText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/kostimografija"
+                        android:textColor="#959191"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/kostimografijaEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:maxLength="50"
+                        android:hint="@string/unos_kostimografa"
+                        android:autofillHints="@null"
+                        android:inputType="text"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#D5AEB7"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#434242" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/scenografijaText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/scenografija"
+                        android:textColor="#959191"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/scenografijaEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:maxLength="50"
+                        android:hint="@string/unos_scenografa"
+                        android:autofillHints="@null"
+                        android:inputType="text"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#D5AEB7"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#434242" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/glazbaText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/glazba"
+                        android:textColor="#959191"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/glazbaEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:maxLength="50"
+                        android:hint="@string/unos_glazbe"
+                        android:autofillHints="@null"
+                        android:inputType="text"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#D5AEB7"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#434242" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/koreografijaText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/koreografija"
+                        android:textColor="#959191"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/koreografijaEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:maxLength="50"
+                        android:hint="@string/unos_koreografa"
+                        android:autofillHints="@null"
+                        android:inputType="text"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#D5AEB7"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#434242" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tehnickaPodrskaText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/tehnicka_podrska"
+                        android:textColor="#959191"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/tehnickaPodrskaEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:ems="10"
+                        android:maxLength="80"
+                        android:hint="@string/unos_podrske"
+                        android:autofillHints="@null"
+                        android:inputType="text"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#D5AEB7"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/predstavaButton"
+                    android:layout_width="239dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner_button_blue"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:drawableStart="@drawable/ic_save_black_24dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    android:radius="30dp"
+                    android:text="@string/spremi_predstavu"
+                    android:textColor="#FFFFFF"
+                    app:backgroundTint="#3F51B5" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

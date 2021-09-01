@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarUserProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/pozadina"
+                android:fitsSystemWindows="true"
+                android:minHeight="?attr/actionBarSize"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:title=" ">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    android:src="@drawable/logo" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/pozadina"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#FFFFFF"
+                android:contentDescription="@string/name_app"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/profil" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="@string/korisnicki_racun"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="91dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#434242" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabPregled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scaleType="center"
+                    android:src="@drawable/one"
+                    app:backgroundTint="#818080"
+                    app:fabCustomSize="24dp"
+                    app:maxImageSize="@dimen/fab_dimenzija" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#434242" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/two"
+                    android:clickable="false"
+                    android:scaleType="center"
+                    android:src="@drawable/two"
+                    app:backgroundTint="#818080"
+                    app:fabCustomSize="24dp"
+                    app:maxImageSize="@dimen/fab_dimenzija" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="91dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#434242" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textPregled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/pregled_podataka_korisnik"
+                    android:textColor="#787474"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/textUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="@string/update_podataka_korisnik"
+                    android:textColor="#787474"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
+                app:cardBackgroundColor="#222123"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView178"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:text="@string/upravljanje_profilom"
+                        android:textAllCaps="true"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/textView47"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="20dp"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:text="@string/promjena_podataka"
+                            android:textColor="#5E5D5D"
+                            android:textSize="15sp" />
+
+                        <Switch
+                            android:id="@+id/switchProfile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="end"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView39"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ime_profil"
+                            android:textColor="#5E5D5D"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/imeEdit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:autofillHints="Ime"
+                            android:ems="10"
+                            android:maxLength="40"
+                            android:hint="@string/ime"
+                            android:inputType="textPersonName"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp">
+
+                        <TextView
+                            android:id="@+id/textView40"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/prezime_profil"
+                            android:textColor="#5E5D5D"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/prezimeEdit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:autofillHints="Prezime"
+                            android:ems="10"
+                            android:maxLength="40"
+                            android:hint="@string/prezime"
+                            android:inputType="textPersonName"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp">
+
+                        <TextView
+                            android:id="@+id/textView41"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="@string/Telefon"
+                            android:textColor="#5E5D5D"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/telefonEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:layout_weight="1"
+                            android:autofillHints="Broj telefona
+"
+                            android:ems="10"
+                            android:hint="@string/unesi_broj"
+                            android:inputType="numberSigned"
+                            android:maxLength="10"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp">
+
+                        <TextView
+                            android:id="@+id/textView42"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="@string/email"
+                            android:textColor="#5E5D5D"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/emailEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:layout_weight="1"
+                            android:autofillHints="E-mail adresa"
+                            android:ems="10"
+                            android:maxLength="60"
+                            android:hint="@string/unesi_adresu"
+                            android:inputType="textEmailAddress"
+                            android:text="@string/email"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp">
+
+                        <TextView
+                            android:id="@+id/textView45"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/broj_racuna"
+                            android:textColor="#5E5D5D"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/racunEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autofillHints="Broj računa"
+                            android:ems="10"
+                            android:hint="@string/racun"
+                            android:inputType="numberSigned"
+                            android:text="@string/racun"
+                            android:textColor="#5E5D5D"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutPotvrda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="10dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/textView164"
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.7"
+                            android:gravity="center|start"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="0dp"
+                            android:text="@string/zadrzati_email"
+                            android:textColor="#5E5D5D"
+                            android:textSize="15sp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBoxEmailUser"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:buttonTint="#E91E63"
+                            android:text="@string/text_off"
+                            android:textColor="#787474"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutOdluka"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/textView48"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/promjena_lozinke_korisnik"
+                            android:textColor="#5E5D5D"
+                            android:textSize="16sp" />
+
+                        <CheckBox
+                            android:id="@+id/checkBoxProfile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:buttonTint="#FF1744"
+                            android:textColor="#FFFFFF" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutLozinka1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/textView43"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="@string/unesi_lozinku"
+                            android:textColor="#5E5D5D"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/lozinkaEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:autofillHints="Lozinka"
+                            android:ems="10"
+                            android:maxLength="60"
+                            android:hint="@string/lozinka"
+                            android:inputType="textPassword"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutLozinka2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/textView44"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="@string/potvrdi_lozinku"
+                            android:textColor="#5E5D5D"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/ponovljenaLozinkaEdit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:autofillHints="Lozinka"
+                            android:ems="10"
+                            android:maxLength="60"
+                            android:hint="@string/lozinka"
+                            android:inputType="textPassword"
+                            android:textColor="#FFFFFF"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/corner_button_blue"
+                        android:backgroundTint="#673AB7"
+                        android:drawableStart="@drawable/ic_save_black_24dp"
+                        android:gravity="center"
+                        android:paddingStart="40dp"
+                        android:paddingEnd="40dp"
+                        android:radius="30dp"
+                        android:text="@string/spremi"
+                        android:textColor="#FFFFFF"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

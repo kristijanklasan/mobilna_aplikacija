@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/pregledRezervacije"
+        android:icon="@drawable/ticket"
+        android:title="Lista rezervacija"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/mojIzbor"
+        android:icon="@drawable/ic_favorite_border_black_24dp"
+        android:title="Moj izbor"
+        app:showAsAction="always"></item>
+</menu>

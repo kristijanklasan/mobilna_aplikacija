@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical"
+    android:background="@color/pozadina"
+    tools:context="android.unipu.theater.fragmenti.user.TermsReservation">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="@string/tekst_uvjeti"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <ExpandableListView
+        android:id="@+id/expandable_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="60dp"
+        android:background="@color/pozadina"
+        android:groupIndicator="@drawable/custom_expandable" />
+</LinearLayout>

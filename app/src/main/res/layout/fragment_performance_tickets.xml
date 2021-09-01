@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/pozadina"
+    android:id="@+id/contentTickets"
+    tools:context="android.unipu.theater.fragmenti.user.PerformanceTickets">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/textView78"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/odaberi_filter"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:checkedChip="@id/chipSve"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipSve"
+                style="@style/customChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/sve"
+                android:textAllCaps="true"
+                android:theme="@style/Theme.MaterialComponents.Bridge" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipDanas"
+                style="@style/customChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/danas"
+                android:textAllCaps="true"
+                android:theme="@style/Theme.MaterialComponents.Bridge" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipSutra"
+                style="@style/customChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/sutra"
+                android:textAllCaps="true"
+                android:theme="@style/Theme.MaterialComponents.Bridge" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipMjesec"
+                style="@style/customChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/mjesec"
+                android:textAllCaps="true"
+                android:theme="@style/Theme.MaterialComponents.Bridge" />
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listTickets"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.1"
+        android:background="@drawable/listview_color"
+        android:dividerHeight="3dp"
+        android:paddingLeft="4dp"
+        android:paddingTop="2dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="2dp" />
+
+</LinearLayout>

@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/adminReservationList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pozadina"
+    tools:context="android.unipu.theater.fragmenti.administrator.AdminReservationList">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/cardview_reservation_style"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/adminReservationImage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+        <TextView
+            android:id="@+id/textView141"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center|start"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            android:text="@string/popis_rezervacija"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView44"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:contentDescription="@null"
+                android:src="@drawable/ticket" />
+
+            <TextView
+                android:id="@+id/kolicinaAdminReservation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center|start"
+                android:text="@string/broj"
+                android:textColor="#A5A0A0"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/adminCardPopup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#320919"
+        android:backgroundTint="#320919"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:id="@+id/linearAdminPopup"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView143"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:gravity="center"
+                android:paddingStart="5dp"
+                android:paddingEnd="0dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/prikaz_potvrde"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupAdminTickets"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:orientation="horizontal"
+                android:paddingStart="0dp"
+                android:paddingEnd="10dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:buttonTint="#E91E63"
+                    android:checked="true"
+                    android:text="@string/sve"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:buttonTint="#E91E63"
+                    android:text="@string/da"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:buttonTint="#E91E63"
+                    android:checked="false"
+                    android:text="@string/ne"
+                    android:textColor="#FFFFFF" />
+            </RadioGroup>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerTicketList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp" />
+</LinearLayout>
+
+

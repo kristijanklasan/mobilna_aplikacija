@@ -1,0 +1,317 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    tools:context="android.unipu.theater.fragmenti.administrator.NewUserFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#222123"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="20dp">
+
+                    <TextView
+                        android:id="@+id/textView173"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/novi_admin"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+
+                    <TextView
+                        android:id="@+id/textView174"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/profilData"
+                        android:textColor="#9C9999" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/textView166"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ime_unos"
+                        android:textColor="#9C9999"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/imeNewAdmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:maxLength="40"
+                        android:hint="@string/ime"
+                        android:inputType="textPersonName"
+                        android:autofillHints="Ime"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/grayReservation" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/textView167"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/prezime_unos"
+                        android:textColor="#9C9999"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/prezimeNewAdmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:maxLength="40"
+                        android:hint="@string/prezime"
+                        android:autofillHints="Prezime"
+                        android:inputType="textPersonName"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/grayReservation" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/textView170"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/broj_unos"
+                        android:textColor="#9C9999"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/brojNewAdmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:maxLength="10"
+                        android:hint="@string/broj"
+                        android:autofillHints="Broj telefona"
+                        android:inputType="numberSigned"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/grayReservation" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/textView168"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email_unos"
+                        android:textColor="#9C9999"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/emailNewAdmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:maxLength="60"
+                        android:hint="@string/email"
+                        android:autofillHints="E-mail adresa"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/grayReservation" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/textView171"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lozinka_unos"
+                        android:textColor="#9C9999"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/lozinkaNewAdmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:maxLength="60"
+                        android:inputType="textPassword"
+                        android:autofillHints="Lozinka"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/grayReservation" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/textView172"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lozinka_ponovno"
+                        android:textColor="#9C9999"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/potvrdaLozinkeNewAdmin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:maxLength="60"
+                        android:inputType="textPassword"
+                        android:autofillHints="Potvrda lozinke"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/grayReservation" />
+
+                <Button
+                    android:id="@+id/btnDodajAdmin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/bg_new_user"
+                    android:drawableEnd="@drawable/ic_chevron_right_black_24dp"
+                    android:text="@string/potvrda_unosa"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

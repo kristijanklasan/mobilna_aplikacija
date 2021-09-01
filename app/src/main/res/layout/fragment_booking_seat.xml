@@ -1,0 +1,791 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pozadina"
+    tools:context="android.unipu.theater.fragmenti.user.BookingSeat">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="60dp"
+        app:cardBackgroundColor="#13162E"
+        app:cardCornerRadius="20sp"
+        app:cardElevation="20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/name_app"
+                    android:src="@drawable/theater_mask" />
+
+                <TextView
+                    android:id="@+id/textView108"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/rezervacija_ulaznic"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/textView112"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/naziv_predstave"
+                        android:textColor="@color/grayReservation"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="20dp">
+
+                    <TextView
+                        android:id="@+id/nazivTickets"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/naziv"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageView24"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/ic_date_range_color_24dp" />
+
+                    <TextView
+                        android:id="@+id/textView114"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/datum_prikazivanja"
+                        android:textColor="@color/grayReservation"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayReservation" />
+
+                    <TextView
+                        android:id="@+id/datumFinal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/naziv"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/grayReservation" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageView25"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/ic_access_time_black_24dp"/>
+
+                    <TextView
+                        android:id="@+id/textView115"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/vrijeme_pocetka"
+                        android:textColor="@color/grayReservation"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayReservation" />
+
+                    <TextView
+                        android:id="@+id/vrijemeFinal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/vrijeme"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/grayReservation" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageView26"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/coin" />
+
+                    <TextView
+                        android:id="@+id/textView116"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/cijena_ulaznica"
+                        android:textColor="@color/grayReservation"
+                        android:textSize="15sp" />
+
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayReservation" />
+
+                    <TextView
+                        android:id="@+id/cijenaFinal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/cijena"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/grayReservation" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageView27"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        app:srcCompat="@drawable/ic_room_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/textView117"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/dvorana_kazalista"
+                        android:textColor="@color/grayReservation"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayReservation" />
+
+                    <TextView
+                        android:id="@+id/dvoranaFinal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/glavna_dvorana"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/grayReservation" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageView30"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_account_circle_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/textView119"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/Korisnik_novo"
+                        android:textColor="@color/grayReservation"
+                        android:textSize="15sp" />
+
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayReservation" />
+
+                    <TextView
+                        android:id="@+id/korisnikFinal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/korisnik"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/grayReservation" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageView28"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ticket" />
+
+                    <TextView
+                        android:id="@+id/textView118"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/kolicina_ulaznica"
+                        android:textColor="@color/grayReservation"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayReservation" />
+
+                    <TextView
+                        android:id="@+id/ulazniceFinal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/vrijeme"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view25"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/grayReservation" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp">
+
+
+                    <ImageView
+                        android:id="@+id/imageView29"
+                        android:layout_width="10dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="0.1"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/ticket" />
+
+                    <TextView
+                        android:id="@+id/textView113"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:text="@string/popis_ulaznica"
+                        android:textColor="@color/grayReservation"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ticketLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:orientation="vertical"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:paddingBottom="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/textView110"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/izracun_cijene"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grayReservation"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="#605E5E"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/textView120"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/stavka"
+                        android:textAllCaps="true"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView121"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/kolicina"
+                        android:textAllCaps="true"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView123"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/cijena"
+                        android:textAllCaps="true"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/textView122"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/iznos"
+                        android:textAllCaps="true"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/stavkaFinal"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="@string/ulaznica"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/kolicinaFinal"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="@string/crtica"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/cijena"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:text="@string/cijena_rezervacija"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/iznosFinal"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:text="@string/nula_kn"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/stavkaDanFinal"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="@string/dan_kupnje_rezervacija"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/kolicinaDanFinal"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="@string/crtica"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/cijenaDan"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:text="@string/cijena_rezervacija"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/iznosDanFinal"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:text="@string/nula_kn"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/stavkaPremijeraFinal"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="@string/premijera"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/kolicinaPremijeraFinal"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="@string/crtica"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/cijenaPremijeraFinal"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:text="@string/cijena_rezervacija"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/iznosPremijeraFinal"
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:text="@string/nula_kn"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/grayReservation" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+
+                    <TextView
+                        android:id="@+id/textView124"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:gravity="end"
+                        android:text="@string/ukupno"
+                        android:textColor="#B33737"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/grayReservation" />
+
+                    <TextView
+                        android:id="@+id/iznosFullFinal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:gravity="center"
+                        android:text="@string/nula_kn"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeRezerviraj"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:background="@color/green"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginEnd="3dp"
+                            android:layout_marginBottom="3dp"
+                            android:contentDescription="@null"
+                            android:src="@color/green"
+                            android:tint="#FFFFFF" />
+
+                        <RelativeLayout
+                            android:layout_width="65dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@color/green">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@null"
+                                android:padding="7dp"
+                                android:src="@drawable/ic_shop"
+                                android:tint="#FFFFFF" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="65dp"
+                            android:gravity="center"
+                            android:text="@string/rezerviraj"
+                            android:textAllCaps="true"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/pozadina"
+    android:fillViewport="true"
+    android:filterTouchesWhenObscured="false"
+    android:fitsSystemWindows="true"
+    tools:context=".user.UserLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/theater_mask" />
+
+        <TextView
+            android:id="@+id/textView199"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:paddingBottom="20dp"
+            android:text="@string/korisnik"
+            android:textAllCaps="true"
+            android:textColor="@color/grey"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textNaslov"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/prijavite_se_naslov"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/email_unos"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/textfield"
+                android:drawableStart="@drawable/ic_email_black_24dp"
+                android:autofillHints="E-mail adresa"
+                android:drawablePadding="20dp"
+                android:maxLength="60"
+                android:hint="@string/unesi_adresu"
+                android:inputType="textEmailAddress"
+                android:paddingStart="15dp"
+                android:paddingEnd="0dp"
+                android:selectAllOnFocus="true"
+                android:textColor="#000000"
+                android:textIsSelectable="false"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textLozinka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:text="@string/lozinka_unos"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/textfield"
+                android:drawableStart="@drawable/ic_vpn_key_black_24dp"
+                android:autofillHints="Lozinka"
+                android:drawablePadding="20dp"
+                android:maxLength="60"
+                android:hint="@string/unesi_lozinku"
+                android:inputType="textPassword"
+                android:paddingStart="15dp"
+                android:paddingEnd="0dp"
+                android:scrollbarAlwaysDrawHorizontalTrack="false"
+                android:selectAllOnFocus="true"
+                android:textColor="#000000"
+                android:textIsSelectable="false"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_user_login"
+                android:drawableStart="@drawable/ic_vpn_key_black_24dp"
+                android:gravity="center"
+                android:paddingStart="90dp"
+                android:paddingEnd="90dp"
+                android:radius="30dp"
+                android:text="@string/prijavite_se_naslov"
+                android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textNoviRacun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+
+                android:paddingStart="30dp"
+                android:paddingEnd="0dp"
+                android:text="@string/nemate_racun"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/registrationLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="@string/registrirajte_se"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="20dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/adminButton"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:backgroundTint="@color/grayReservation"
+                app:maxImageSize="40dp"
+                app:srcCompat="@drawable/ic_settings_black_24dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

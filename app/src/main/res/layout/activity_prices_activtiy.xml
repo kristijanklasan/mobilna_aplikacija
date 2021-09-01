@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pricesView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pozadina"
+    android:orientation="vertical"
+    tools:context="android.unipu.theater.administrator.PricesActivtiy">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarPrices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/pozadina"
+                android:fitsSystemWindows="true"
+                android:minHeight="?attr/actionBarSize"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:title=" ">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    android:src="@drawable/logo" />
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/tekstCijene"
+        android:textAlignment="inherit"
+        android:textAllCaps="false"
+        android:textColor="#807C7C"
+        android:textSize="15sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPrices"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+</LinearLayout>

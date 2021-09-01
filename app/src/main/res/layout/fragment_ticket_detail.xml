@@ -1,0 +1,476 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pozadina"
+    tools:context="android.unipu.theater.fragmenti.administrator.TicketDetail">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="#191D33">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cardview_reservation_style"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView142"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/prikaz_rezervacije"
+                    android:textAllCaps="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/textView145"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/Korisnik_novo"
+                        android:textColor="#9A9494"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayReservation" />
+
+                    <TextView
+                        android:id="@+id/kupacTicketDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/korisnik"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/grayReservation" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/textView153"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/datum_prikazivanja"
+                        android:textColor="#9A9494"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayReservation" />
+
+                    <TextView
+                        android:id="@+id/prikazTicketDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/datum"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/grayReservation" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/textView154"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/vrijeme_prikazivanja"
+                        android:textColor="#9A9494"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayReservation" />
+
+                    <TextView
+                        android:id="@+id/vrijemeTicketDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/vrijeme"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/grayReservation" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/textView147"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/datum_rezervacije"
+                        android:textColor="#9A9494"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayReservation" />
+
+                    <TextView
+                        android:id="@+id/datumTicketDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/datum"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/grayReservation" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/textView150"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/broj_ulaznica"
+                        android:textColor="#9A9494"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayReservation" />
+
+                    <TextView
+                        android:id="@+id/brojTicketDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/broj"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/grayReservation" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/textView151"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/ukupna_cijena"
+                        android:textColor="#9A9494"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayReservation" />
+
+                    <TextView
+                        android:id="@+id/ukupnoTicketDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/ukupno"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/grayReservation" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/textView152"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/potvrda_placanja"
+                        android:textColor="#9A9494"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayReservation" />
+
+                    <TextView
+                        android:id="@+id/potvrdaTicketDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/potvrda"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/grayReservation" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/textView155"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/sifra_ulaznice"
+                        android:textColor="#9A9494"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayReservation" />
+
+                    <TextView
+                        android:id="@+id/sifraTicketDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="0dp"
+                        android:text="@string/sifra"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/grayReservation" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp">
+
+
+                    <ImageView
+                        android:id="@+id/imageView29"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:contentDescription="@null"
+                        app:srcCompat="@drawable/ticket" />
+
+                    <TextView
+                        android:id="@+id/textView113"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1"
+                        android:gravity="center"
+                        android:text="@string/popis_ulaznica"
+                        android:textColor="@color/grayReservation"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:id="@+id/adminTicketLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingBottom="10dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/grayReservation" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/textView156"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/trenutno_stanje"
+                        android:textColor="#9A9494"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/statusTicketDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="2dp"
+                        android:text="@string/naslov"
+                        android:textColor="#FFFFFF" />
+
+                    <Switch
+                        android:id="@+id/switchTicketDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/ne"
+                        android:textColor="#AE1F1F" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/adminDeleteTicket"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/red_border"
+                        android:drawableStart="@drawable/ic_delete_black_24dp"
+                        android:paddingStart="40dp"
+                        android:paddingEnd="40dp"
+                        android:text="@string/izbrisi_rezervaciju"
+                        android:textColor="#971744"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

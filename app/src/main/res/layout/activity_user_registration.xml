@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pozadina"
+    tools:context=".user.UserRegistration">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@drawable/theater_mask" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/registracija_naslov"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/ime_unos"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/nameRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/textfield"
+            android:drawableStart="@drawable/ic_person_black_24dp"
+            android:autofillHints="Ime"
+            android:drawablePadding="20dp"
+            android:maxLength="40"
+            android:hint="@string/unesi_ime"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:paddingEnd="0dp"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:selectAllOnFocus="true"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/prezime_unos"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/lastNameRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/textfield"
+            android:drawableStart="@drawable/ic_person_black_24dp"
+            android:autofillHints="Prezime"
+            android:drawablePadding="20dp"
+            android:maxLength="40"
+            android:hint="@string/unesi_prezime"
+            android:inputType="text"
+            android:paddingStart="15dp"
+            android:paddingEnd="0dp"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:selectAllOnFocus="true"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textPhoneRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/broj_unos"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/phoneRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
+            android:autofillHints="Broj"
+            android:background="@drawable/textfield"
+            android:drawableStart="@drawable/ic_phone_black_24dp"
+            android:drawablePadding="20dp"
+            android:hint="@string/unesi_broj"
+            android:maxLength="10"
+            android:inputType="numberSigned|phone"
+            android:paddingStart="15dp"
+            android:paddingEnd="0dp"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:selectAllOnFocus="true"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/textEmailRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/email_unos"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/emailRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/textfield"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            android:autofillHints="E-mail adresa"
+            android:drawablePadding="20dp"
+            android:maxLength="60"
+            android:hint="@string/unesi_adresu"
+            android:inputType="textEmailAddress"
+            android:paddingStart="15dp"
+            android:paddingEnd="0dp"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:selectAllOnFocus="true"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/textPasswordRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/lozinka_unos"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/passwordRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/textfield"
+            android:drawableStart="@drawable/ic_vpn_key_black_24dp"
+            android:autofillHints="Lozinka"
+            android:drawablePadding="20dp"
+            android:maxLength="60"
+            android:hint="@string/unesi_lozinku"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:paddingEnd="0dp"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:selectAllOnFocus="true"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/registration"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="start"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_register"
+                android:drawableStart="@drawable/ic_person_add_black_24dp"
+                android:gravity="center"
+                android:paddingStart="60dp"
+                android:paddingEnd="60dp"
+                android:radius="30dp"
+                android:text="@string/registracija_gumb"
+                android:textColor="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textPrijava"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/otvoreni_racun"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/loginLink"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:text="@string/prijavite_se"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+            </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,80 @@
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <dimen name="normalna_dimenzija"  tools:override="true">56dp</dimen>
+    <dimen name="fab_dimenzija"  tools:override="true">20dp</dimen>
+
+    <style name="customChip" parent="Widget.MaterialComponents.Chip.Filter">
+        <item name="chipBackgroundColor">@color/chip_background_color</item>
+        <item name="android:textColor">@color/chip_text_color</item>
+        <item name="checkedIconTint">@color/white</item>
+    </style>
+
+    <style name="Chip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">#9b1cce</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.Transparent" parent="AppTheme">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="colorPrimary">@android:color/transparent</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.Title.Collapsed" parent="android:TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextAppearance.MyApp.Title.Expanded" parent="android:TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.CornerSize">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="spinnerTextColor" parent = "@android:style/Widget.Holo.TextView.SpinnerItem">
+        <item name ="android:textColor">@color/bluedark</item>
+    </style>
+
+    <style name="app_bar_collapsed" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="app_bar_expanded" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/seatTitle</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="toolbar" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="BottomSheetDialog" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+</resources>

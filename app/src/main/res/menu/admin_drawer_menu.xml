@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="nv">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Opcije administratora">
+            <menu>
+                <group
+                    android:id="@+id/menu_top_admin"
+                    android:checkableBehavior="single">
+
+                    <item android:id="@+id/pregledPonuda"
+                        android:icon="@drawable/ic_playlist_add_check_black_24dp"
+                        android:title="PREGLED PONUDA">
+                    </item>
+
+                    <item
+                        android:id="@+id/rezerviraneKarte"
+                        android:icon="@drawable/ic_content_paste_black_24dp"
+                        android:title="REZERVIRANE ULAZNICE">
+                    </item>
+
+                    <item android:id="@+id/novaPonuda"
+                        android:icon="@drawable/ic_add_circle_black_24dp"
+                        android:title="NOVA PONUDA">
+                    </item>
+
+                    <item android:id="@+id/upravljanjeCijenama"
+                        android:icon="@drawable/ic_attach_money_black_24dp"
+                        android:title="UPRAVLJANJE CIJENAMA">
+                    </item>
+
+                    <item android:id="@+id/postavkeProfila"
+                        android:icon="@drawable/ic_account_circle_black_24dp"
+                        android:title="POSTAVKE PROFILA"/>
+
+                    <item android:id="@+id/upravljanjeUpitima"
+                        android:icon="@drawable/ic_question_answer_black_24dp"
+                        android:title="UPRAVLJANJE UPITIMA">
+                    </item>
+                </group>
+            </menu>
+        </item>
+        <item
+            android:title="Izlazak iz aplikacije">
+            <menu>
+                <group>
+                    <item android:id="@+id/adminOdjava"
+                        android:icon="@drawable/ic_power_settings_new_black_24dp"
+                        android:title="ODJAVI SE"></item>
+                </group>
+            </menu>
+        </item>
+    </group>
+</menu>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/insertIcon"
+        android:icon="@drawable/ic_add_black_24dp"
+        app:showAsAction="always"
+        tools:ignore="MenuTitle"></item>
+
+    <item  android:id="@+id/dateSort"
+        android:icon="@drawable/ic_sort_black_24dp"
+        android:title=""
+        app:showAsAction="ifRoom|collapseActionView">
+
+        <menu>
+            <item android:id="@+id/dateSortDESC"
+                android:icon="@drawable/ic_keyboard_arrow_down_black_24dp"
+                android:title="Sortiraj silazno"></item>
+
+            <item android:id="@+id/dateSortASC"
+                android:title="Sortiraj uzlazno"
+                android:icon="@drawable/ic_keyboard_arrow_up_black_24dp"></item>
+        </menu>
+    </item>
+</menu>

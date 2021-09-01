@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="700dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:background="@color/bluedark"
+    android:gravity="center"
+    android:id="@+id/popupWindowPrices"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/closeText"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:background="@drawable/circlex"
+        android:gravity="center"
+        android:text="@string/close"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            android:layout_weight="1"
+            android:contentDescription="@null"
+            app:srcCompat="@drawable/price" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/unos_cijene"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/tekst_unosa_cijene"
+        android:textColor="@color/bluelight"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/datum_unosa"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/datumCijene"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cijene_djeca"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/cijenaNajmanje"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/unesite_cijenu"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#5E5A5A"
+            android:textSize="15sp"
+            tools:ignore="autofill"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cijene_odrasli"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/cijenaOdrasli"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/unesite_cijenu"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#5E5A5A"
+            android:textSize="15sp"
+            tools:ignore="Autofill"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cijene_studenti"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/cijenaStudenti"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/unesite_cijenu"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#5E5A5A"
+            android:textSize="15sp"
+            tools:ignore="autofill"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cijene_umirovljenici"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/cijenaUmirovljenici"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/unesite_cijenu"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#5E5A5A"
+            android:textSize="15sp"
+            tools:ignore="autofill"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ulaznice_premijera"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/cijenaPremijera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/unesite_cijenu"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#5E5A5A"
+            android:textSize="15sp"
+            tools:ignore="autofill"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cijena_danas"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/cijenaDana"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/unesite_cijenu"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#5E5A5A"
+            android:textSize="15sp"
+            tools:ignore="autofill"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSpremiCijene"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="start"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/corner_button_blue"
+        android:backgroundTint="#673AB7"
+        android:drawableStart="@drawable/ic_save_black_24dp"
+        android:gravity="center"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:radius="30dp"
+        android:text="@string/spremi_cijenu"
+        android:textColor="#FFFFFF" />
+
+
+</LinearLayout>

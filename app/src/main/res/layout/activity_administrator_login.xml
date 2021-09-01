@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pozadina"
+    android:fillViewport="true"
+    android:filterTouchesWhenObscured="false"
+    android:fitsSystemWindows="false"
+    tools:context="android.unipu.theater.administrator.AdministratorLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@drawable/theater_mask" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textNaslov"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/administrator"
+            android:textAllCaps="true"
+            android:textColor="#6A6868"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textNaslov2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/prijavite_se_naslov"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textEmail2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:text="@string/email_unos"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/emailAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
+            android:maxLength="60"
+            android:autofillHints="E-mail adresa"
+            android:background="@drawable/textfield"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            android:drawablePadding="20dp"
+            android:hint="@string/unesi_adresu"
+            android:inputType="textEmailAddress"
+            android:paddingStart="15dp"
+            android:paddingEnd="0dp"
+            android:selectAllOnFocus="true"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textLozinka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:text="@string/lozinka_unos"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/passwordAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
+            android:maxLength="60"
+            android:autofillHints="Lozinka"
+            android:background="@drawable/textfield"
+            android:drawableStart="@drawable/ic_vpn_key_black_24dp"
+            android:drawablePadding="20dp"
+            android:hint="@string/unesi_lozinku"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:paddingEnd="0dp"
+            android:selectAllOnFocus="true"
+            android:textColor="#000000"
+            android:textIsSelectable="false"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/adminLoginButton"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_admin_login"
+            android:drawableStart="@drawable/ic_vpn_key_black_24dp"
+            android:gravity="center"
+            android:paddingStart="90dp"
+            android:paddingEnd="90dp"
+            android:radius="30dp"
+            android:text="@string/prijavite_se_naslov"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="20dp"
+                android:gravity="bottom|end"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/loginFabText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/prijava_korisnika"
+                    android:textColor="#7E7979"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabLogin"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="invisible"
+                    app:backgroundTint="#2F96C0"
+                    app:srcCompat="@drawable/ic_vpn_key_black_24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="bottom|end"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/registrationFabText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/registracija_korisnika"
+                    android:textColor="#7E7979"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabRegister"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="25dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="invisible"
+                    app:backgroundTint="#2F96C0"
+                    app:srcCompat="@drawable/ic_person_add_black_24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mainFabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabPlus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="25dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foregroundGravity="bottom"
+                    app:backgroundTint="#AA1958"
+                    app:srcCompat="@drawable/ic_add_black_24dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
